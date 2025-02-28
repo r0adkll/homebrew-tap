@@ -1,4 +1,4 @@
-class DangerKotlin < Formula
+class DangerKotlinIntel < Formula
   desc "Write your Dangerfiles in Kotlin"
   homepage "https://github.com/r0adkll/danger-kotlin"
   version "2.0.1"
