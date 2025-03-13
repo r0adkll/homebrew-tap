@@ -1,9 +1,9 @@
 class DangerKotlinIntel < Formula
   desc "Write your Dangerfiles in Kotlin"
   homepage "https://github.com/r0adkll/danger-kotlin"
-  version "2.0.5"
+  version "2.0.6"
   url "https://github.com/r0adkll/danger-kotlin/releases/download/#{version}/danger-kotlin-macosX64.tar"
-  sha256 "1bbe5c0a6dc871c1d3a453b6b1cd382d378b466594e08927fb649a0449cff574"
+  sha256 "0ec312d3155375f400a24eba67d85978cca9d1799e1784b1af705e39e8d61e52"
   head "https://github.com/r0adkll/danger-kotlin.git"
 
   # Use the vendored danger
