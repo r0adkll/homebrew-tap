@@ -1,12 +1,12 @@
 class DangerKotlin < Formula
   desc "Write your Dangerfiles in Kotlin"
   homepage "https://github.com/r0adkll/danger-kotlin"
-  version "2.0.7"
+  version "2.0.8"
   head "https://github.com/r0adkll/danger-kotlin.git"
   
   if Hardware::CPU.arm?
     url "https://github.com/r0adkll/danger-kotlin/releases/download/#{version}/danger-kotlin-macosArm64.tar"
-    sha256 "869d676a9b62efeac47e6b42f4da634d1d39807be9d15ae76a4fde0e60d67ae0"
+    sha256 "e2fb770555f07293e1edc432c063e99f711826b31bc930ce6b7df6d1b4a1f215"
   
     # Use the vendored danger
     depends_on "danger/tap/danger-js"
@@ -21,7 +21,7 @@ class DangerKotlin < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/r0adkll/danger-kotlin/releases/download/#{version}/danger-kotlin-macosX64.tar"
-    sha256 "d8011232835d2fe09a848c0439a63a54d8ccc619d0aab42361844863eceeb068"
+    sha256 "7257fe8c4087494b30c5dc59547c5312ccbae07d4c84d04f8a30c813f5a1b3a9"
 
     # Use the vendored danger
     depends_on "danger/tap/danger-js"
