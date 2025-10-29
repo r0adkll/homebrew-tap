@@ -39,6 +39,6 @@ sed -i '' \
     danger-kotlin.rb
 
 # Stage and commit the changes with a message "Updating danger-kotlin to $VERSION"
-# git add danger-kotlin.rb
-# git commit -m "Updating danger-kotlin to $VERSION"
-# git push origin main
+git add danger-kotlin.rb
+git commit -m "Updating danger-kotlin to $VERSION"
+git push origin main
