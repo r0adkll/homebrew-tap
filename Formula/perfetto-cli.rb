@@ -1,25 +1,25 @@
 class PerfettoCli < Formula
   desc "A Rust TUI for managing Android Perfetto trace sessions."
   homepage "https://github.com/r0adkll/perfetto-cli"
-  version "0.4.0"
+  version "0.4.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.4.0/perfetto-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "3c410139529975861a37ab87e9dedb8dc147a0db94936afd2b1a266b5428d87b"
+      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.4.1/perfetto-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "30d40522cf4a0e7d06aa81c0ca34831bfa00d60dcf0a805c28ee03ae5ef15381"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.4.0/perfetto-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "ec92fde78b37e7a4970d3d68c60f6eda6ab2537bec0a926bd23f0b2ad29f0e54"
+      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.4.1/perfetto-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "485cf69670aba5c37b26fb61a24fa1fe75b74a7dfe79b7e20ef463cb417a3501"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.4.0/perfetto-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ebab6ff122aa23fac02ba4d43bd90072d05bd806b80564686f2cdba51f3770db"
+      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.4.1/perfetto-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1da06856ebbca742f3694358fbd799f1e360528409a5028d48c7817cc4a97c63"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.4.0/perfetto-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c0fbdef302c62806b2917212b4fc4e622d52e941a87ad9f8c4cb9869bb8e1657"
+      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.4.1/perfetto-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "843d9279a70c7db4428a32e6cfa04a92b756b86a04bdc7054097589f1d4ba5a8"
     end
   end
   license "MIT"
