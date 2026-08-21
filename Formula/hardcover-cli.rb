@@ -1,25 +1,25 @@
 class HardcoverCli < Formula
   desc "Command-line client for Hardcover.app, built for agents first"
   homepage "https://github.com/r0adkll/hardcover-cli"
-  version "0.4.1"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/r0adkll/hardcover-cli/releases/download/v0.4.1/hardcover-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "18617137b44be39a79448e61e5f37ac462ece3234c6dc9e50a3e3a43821e968e"
+      url "https://github.com/r0adkll/hardcover-cli/releases/download/v0.5.0/hardcover-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "66e63481b9ff3151af0c12802b651f56fac1bc548564157dbd7fba27fc6de21b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/r0adkll/hardcover-cli/releases/download/v0.4.1/hardcover-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "13b839487556f1883ca09f4610de6a0eb33687a1ab558631fde4c1e2f2bac0ec"
+      url "https://github.com/r0adkll/hardcover-cli/releases/download/v0.5.0/hardcover-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f2524020b7345fa1b2a66ef4860337ad574c2146d2a32fd56033fe5c33a9294f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/r0adkll/hardcover-cli/releases/download/v0.4.1/hardcover-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "585248b9b962b357e7c06f5912798f5f16deaacf57a2b7f61deacaf40bac2af7"
+      url "https://github.com/r0adkll/hardcover-cli/releases/download/v0.5.0/hardcover-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "92c839cc9ddaccfc7c163d003f5b29ae7b203915f312482b6856b01edf50f473"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/r0adkll/hardcover-cli/releases/download/v0.4.1/hardcover-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2c2196c6faca9444caaf0fd6ad9dfb9cad826d8812d298809d9913b41b39213a"
+      url "https://github.com/r0adkll/hardcover-cli/releases/download/v0.5.0/hardcover-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cf7d98e8b33f1b40629c4bc54c3bcefbec926b83c7bdc035c6624a5bf626cb6f"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
