@@ -6,8 +6,7 @@ cask "campfire" do
   sha256 arm:   "ce0a2c6ab432e956ef26a4d72c450c7cd315f4e1db0d038758ee99cf480c884d",
          intel: "bf37a765573771a9b299196fe49d55038e962e4ea8ac38c8934ad55387f05855"
 
-  url "https://github.com/r0adkll/Campfire/releases/download/#{version}/campfire-#{version}-mac-#{arch}.zip",
-      verified: "github.com/r0adkll/Campfire/"
+  url "https://github.com/r0adkll/Campfire/releases/download/#{version}/campfire-#{version}-mac-#{arch}.zip"
   name "Campfire"
   desc "Audiobook player for Audiobookshelf servers"
   homepage "https://github.com/r0adkll/Campfire"
