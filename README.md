@@ -24,6 +24,6 @@ The tables below are generated from the files in this repo by
 | Package | Description | Version | Install |
 | --- | --- | --- | --- |
 | [campfire](https://github.com/r0adkll/Campfire) | Audiobook player for Audiobookshelf servers | 1.2.0 | `brew install --cask r0adkll/tap/campfire` |
-| [clinic](https://github.com/r0adkll/clinic) | Claude Code session manager on libghostty | 0.1.0 | `brew install --cask r0adkll/tap/clinic` |
+| [clinic](https://github.com/r0adkll/clinic) | Session manager for Claude Code | 0.2.0 | `brew install --cask r0adkll/tap/clinic` |
 
 <!-- END PACKAGES -->
