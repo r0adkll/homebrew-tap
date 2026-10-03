@@ -17,7 +17,7 @@ The tables below are generated from the files in this repo by
 | --- | --- | --- | --- |
 | [danger-kotlin](https://github.com/r0adkll/danger-kotlin) | Write your Dangerfiles in Kotlin | 2.1.0 | `brew install r0adkll/tap/danger-kotlin` |
 | [hardcover-cli](https://github.com/r0adkll/hardcover-cli) | Command-line client for Hardcover.app, built for agents first | 0.6.0 | `brew install r0adkll/tap/hardcover-cli` |
-| [perfetto-cli](https://github.com/r0adkll/perfetto-cli) | A Rust TUI for managing Android Perfetto trace sessions. | 0.5.1 | `brew install r0adkll/tap/perfetto-cli` |
+| [perfetto-cli](https://github.com/r0adkll/perfetto-cli) | A Rust TUI for managing Android Perfetto trace sessions. | 0.6.0 | `brew install r0adkll/tap/perfetto-cli` |
 
 ### Casks
 
