@@ -1,25 +1,25 @@
 class PerfettoCli < Formula
   desc "A Rust TUI for managing Android Perfetto trace sessions."
   homepage "https://github.com/r0adkll/perfetto-cli"
-  version "0.5.1"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.5.1/perfetto-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "bb440fa68c097c5286890c29f81cdd16f5066c32d4aaa58a2ad432ed273d135e"
+      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.6.0/perfetto-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "05a23190558594df35f176cd93b0e53e3fb65a1bd268f5728e0234a012d6e9f3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.5.1/perfetto-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3f050f48748020605158abd1c8d31e99b269d2f685d8dbb21e7a8e791b5eb9b8"
+      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.6.0/perfetto-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "ff11304713376bdc50a0ee794888e87dca5a5f4f0e93371a1069fd2c359e37f7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.5.1/perfetto-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "acbbe14cc9b47276d09d6d40789aba9a02c5466ddaff902cc34aa40f6b522de0"
+      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.6.0/perfetto-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "addc7c8820e208add36850bc2493420f55adf6f0241245fe7d47f6567f51f5ba"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.5.1/perfetto-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "64275f8befb82866feb159c8b517217ae2c0ba0789926ea33156421c89bb8832"
+      url "https://github.com/r0adkll/perfetto-cli/releases/download/v0.6.0/perfetto-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "71e888b088c0a561a70173d80f83ed8e6e835a1eb61639d4e8b5a874ffbfdfcc"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class PerfettoCli < Formula
   end
 
   def install
-    bin.install "perfetto-cli" if OS.mac? && Hardware::CPU.arm?
-    bin.install "perfetto-cli" if OS.mac? && Hardware::CPU.intel?
-    bin.install "perfetto-cli" if OS.linux? && Hardware::CPU.arm?
-    bin.install "perfetto-cli" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "perfetto-cli"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "perfetto-cli"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "perfetto-cli"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "perfetto-cli"
+    end
 
     install_binary_aliases!
 
