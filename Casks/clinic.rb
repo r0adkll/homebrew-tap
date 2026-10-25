@@ -1,7 +1,7 @@
 # Written by scripts/publish in r0adkll/clinic for each release; edit it there.
 cask "clinic" do
-  version "0.6.0"
-  sha256 "ac1a64d76600924c703c9a04c33b13b46c5a10feb5b27386adbc463d2e2b5e99"
+  version "0.6.1"
+  sha256 "9057a6b97cbef61105d3261c08a75269c3af781a0d2628584c1a915dd16455da"
 
   url "https://github.com/r0adkll/clinic/releases/download/#{version}/Clinic-#{version}.zip"
   name "Clinic"
