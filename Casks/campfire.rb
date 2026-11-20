@@ -2,9 +2,9 @@
 cask "campfire" do
   arch arm: "aarch64", intel: "amd64"
 
-  version "1.2.1"
-  sha256 arm:   "e54354a95366433b873b0b9c4c62ed1ce597f91502b346f7b30ee3b57ebe6747",
-         intel: "97e946a0bed2742863bc01a697a0abdfaeede02bbbb54c5e3e31c1728005f394"
+  version "1.3.0"
+  sha256 arm:   "7b12bad1c1efc86bfb38842506a8985b4d8da697cb2d7e193cda54665993ae62",
+         intel: "fe70fd43c228a4af6116772668a549f554d8f9ac1618bd9d90291ebcb0644446"
 
   url "https://github.com/r0adkll/Campfire/releases/download/#{version}/campfire-#{version}-mac-#{arch}.zip"
   name "Campfire"
